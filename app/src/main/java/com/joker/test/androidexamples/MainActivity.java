@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.joker.test.androidexamples.ch03.Ch03_2Activity;
+import com.joker.test.androidexamples.ch03.Ch03_6Activity;
+import com.joker.test.androidexamples.ch03.Ch03_7Activity;
+import com.joker.test.androidexamples.ch03.Ch03_8Activity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -14,6 +17,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         findViewById(R.id.ch03_2).setOnClickListener(this);
+        findViewById(R.id.ch03_6).setOnClickListener(this);
+        findViewById(R.id.ch03_7).setOnClickListener(this);
+        findViewById(R.id.ch03_8).setOnClickListener(this);
     }
 
     @Override
@@ -21,6 +27,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.ch03_2:
                 Ch03_2Activity.start(MainActivity.this);
+                break;
+            case R.id.ch03_6:
+                Ch03_6Activity.start(MainActivity.this);
+                break;
+            case R.id.ch03_7:
+                Ch03_7Activity.start(MainActivity.this);
+                break;
+            case R.id.ch03_8:
+                Ch03_8Activity.start(MainActivity.this);
                 break;
             default:
                 break;

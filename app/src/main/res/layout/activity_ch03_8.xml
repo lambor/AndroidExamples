@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.joker.test.androidexamples.MainActivity">
+
+    <com.joker.test.androidexamples.ch03.Ch03_8FrameA
+        android:background="#ff0000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.joker.test.androidexamples.ch03.Ch03_8FrameB
+            android:background="#00ff00"
+            android:layout_margin="50dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent" android:layout_height="match_parent">
+
+            <com.joker.test.androidexamples.ch03.Ch03_8View
+                android:background="#0000ff"
+                android:layout_margin="50dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.joker.test.androidexamples.ch03.Ch03_8FrameB>
+
+    </com.joker.test.androidexamples.ch03.Ch03_8FrameA>
+
+</android.support.constraint.ConstraintLayout>

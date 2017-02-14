@@ -15,7 +15,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ch03.Ch03_2Activity" android:label="自定义View measure"/>
+        <activity android:name=".ch03.Ch03_2Activity" android:label="自定义View onMeasure"/>
+        <activity android:name=".ch03.Ch03_6Activity" android:label="自定义TextView ondraw"/>
+        <activity android:name=".ch03.Ch03_7Activity" android:label="自定义ScrollView"/>
+        <activity android:name=".ch03.Ch03_8Activity" android:label="事件拦截机制"/>
     </application>
 
 </manifest>
