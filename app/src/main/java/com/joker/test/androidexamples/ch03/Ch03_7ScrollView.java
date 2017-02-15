@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Scroller;
 
+import com.joker.test.androidexamples.Utils;
+
 /**
  * Created by lambor on 17-2-13.
  */
@@ -27,17 +29,10 @@ public class Ch03_7ScrollView extends ViewGroup {
 
     public Ch03_7ScrollView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        mScreenHeight = screenHeight();
+        mScreenHeight = Utils.screenHeight((Activity) getContext());
         mScroller = new Scroller(context);
     }
 
-    private int screenHeight() {
-        DisplayMetrics displaymetrics = new DisplayMetrics();
-        ((Activity) getContext()).getWindowManager()
-                .getDefaultDisplay()
-                .getMetrics(displaymetrics);
-        return displaymetrics.heightPixels;
-    }
 
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
