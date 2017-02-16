@@ -21,6 +21,8 @@
         <activity android:name=".ch03.Ch03_8Activity" android:label="事件拦截机制"/>
         <activity android:name=".ch04.Ch04_2Activity" android:label="具有弹性的listview"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".ch05.Ch05_2Activity" android:label="实现滑动的七种方法"/>
+        <activity android:name=".ch05.Ch05_2_5FlingActivity" android:label="fling滑动"/>
     </application>
 
 </manifest>
