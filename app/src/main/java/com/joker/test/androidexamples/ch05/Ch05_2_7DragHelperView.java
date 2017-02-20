@@ -4,9 +4,9 @@ import android.content.Context;
 import android.support.v4.view.ViewCompat;
 import android.support.v4.widget.ViewDragHelper;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
 /**
@@ -14,6 +14,9 @@ import android.widget.FrameLayout;
  */
 
 public class Ch05_2_7DragHelperView extends FrameLayout {
+
+    private static final String TAG = "Ch05_2_7DragHelperView";
+
     public Ch05_2_7DragHelperView(Context context) {
         this(context,null);
     }
@@ -24,7 +27,7 @@ public class Ch05_2_7DragHelperView extends FrameLayout {
 
     public Ch05_2_7DragHelperView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-
+        initView();
     }
 
     private ViewDragHelper mViewDragHelper;
@@ -67,7 +70,8 @@ public class Ch05_2_7DragHelperView extends FrameLayout {
 
         @Override
         public int clampViewPositionHorizontal(View child, int left, int dx) {
-            return left;
+            Log.e(TAG,"left:"+left);
+            return left>0?Math.min(left,mWidth):0;
         }
 
         @Override
@@ -78,14 +82,20 @@ public class Ch05_2_7DragHelperView extends FrameLayout {
         @Override
         public void onViewReleased(View releasedChild, float xvel, float yvel) {
             super.onViewReleased(releasedChild, xvel, yvel);
-            if(mMainView.getLeft()<500) {
+            if(mMainView.getLeft()<mWidth/2) {
                 mViewDragHelper.smoothSlideViewTo(mMainView,0,0);
                 ViewCompat.postInvalidateOnAnimation(Ch05_2_7DragHelperView.this);
             } else {
-                mViewDragHelper.smoothSlideViewTo(mMainView,300,0);
+                mViewDragHelper.smoothSlideViewTo(mMainView,mWidth,0);
                 ViewCompat.postInvalidateOnAnimation(Ch05_2_7DragHelperView.this);
             }
         }
+
+        @Override
+        public int getViewHorizontalDragRange(View child) {
+            return mWidth;
+        }
+
     };
 
     @Override

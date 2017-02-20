@@ -23,6 +23,8 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity android:name=".ch05.Ch05_2Activity" android:label="实现滑动的七种方法"/>
         <activity android:name=".ch05.Ch05_2_5FlingActivity" android:label="fling滑动"/>
+        <activity android:name=".ch05.Ch05_2_7DragHelperActivity" android:label="ViewDragHelper"/>
+        <activity android:name=".ch06.Ch06_3Activity"/>
     </application>
 
 </manifest>

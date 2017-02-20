@@ -11,6 +11,8 @@ import com.joker.test.androidexamples.ch03.Ch03_8Activity;
 import com.joker.test.androidexamples.ch04.Ch04_2Activity;
 import com.joker.test.androidexamples.ch05.Ch05_2Activity;
 import com.joker.test.androidexamples.ch05.Ch05_2_5FlingActivity;
+import com.joker.test.androidexamples.ch05.Ch05_2_7DragHelperActivity;
+import com.joker.test.androidexamples.ch06.Ch06_3Activity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -28,6 +30,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         findViewById(R.id.ch05_2).setOnClickListener(this);
         findViewById(R.id.ch05_2_5).setOnClickListener(this);
+        findViewById(R.id.ch05_2_7).setOnClickListener(this);
+
+        findViewById(R.id.ch06_2).setOnClickListener(this);
     }
 
     @Override
@@ -53,6 +58,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.ch05_2_5:
                 Ch05_2_5FlingActivity.start(MainActivity.this);
+                break;
+            case R.id.ch05_2_7:
+                Ch05_2_7DragHelperActivity.start(MainActivity.this);
+                break;
+            case R.id.ch06_2:
+                Ch06_3Activity.start(MainActivity.this);
                 break;
             default:
                 break;
