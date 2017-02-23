@@ -127,4 +127,28 @@
         app:layout_constraintLeft_toRightOf="@+id/ch06_4"
         app:layout_constraintTop_toBottomOf="@+id/ch06"/>
 
+    <Button
+        android:id="@+id/ch06_5_2"
+        android:text="ch06_5_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/ch06_5"
+        app:layout_constraintTop_toBottomOf="@+id/ch06"/>
+
+    <Button
+        android:id="@+id/ch06_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ch06_6"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_main"
+        app:layout_constraintTop_toBottomOf="@id/ch06_3"/>
+
+    <Button
+        android:id="@+id/ch06_7"
+        android:text="ch06_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/ch06_6"
+        app:layout_constraintTop_toBottomOf="@+id/ch06_3"/>
+
 </android.support.constraint.ConstraintLayout>

@@ -8,47 +8,48 @@
     android:layout_height="match_parent"
     tools:context="com.joker.test.androidexamples.MainActivity">
 
+
     <ImageView
         android:id="@+id/bitmapImg"
         android:src="@mipmap/ic_launcher"
+        app:layout_constraintTop_toTopOf="@id/activity_main"
         app:layout_constraintLeft_toLeftOf="@id/activity_main"
         app:layout_constraintRight_toRightOf="@id/activity_main"
+        app:layout_constraintBottom_toTopOf="@+id/group"
         android:layout_width="100dp" android:layout_height="100dp"/>
 
-    <SeekBar
-        android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/bitmapImg"
-        android:id="@+id/seekHue"
-        android:max="100"
-        android:progress="50"
-        app:layout_constraintLeft_toLeftOf="@id/activity_main"
-        app:layout_constraintRight_toRightOf="@id/activity_main"
+    <GridLayout
+        android:id="@+id/group"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:columnCount="5"
         app:layout_constraintStart_toStartOf="@id/activity_main"
         app:layout_constraintEnd_toEndOf="@id/activity_main"
-        android:layout_width="0dp" android:layout_height="wrap_content"/>
+        app:layout_constraintLeft_toLeftOf="@id/activity_main"
+        app:layout_constraintRight_toRightOf="@id/activity_main"
+        app:layout_constraintTop_toBottomOf="@id/bitmapImg"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLayout"/>
 
-    <SeekBar
-        android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/seekHue"
-        android:id="@+id/seekSaturation"
-        android:max="100"
-        android:progress="50"
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        app:layout_constraintTop_toBottomOf="@+id/group"
+        app:layout_constraintBottom_toBottomOf="@id/activity_main"
         app:layout_constraintLeft_toLeftOf="@id/activity_main"
         app:layout_constraintRight_toRightOf="@id/activity_main"
         app:layout_constraintStart_toStartOf="@id/activity_main"
         app:layout_constraintEnd_toEndOf="@id/activity_main"
-        android:layout_width="0dp" android:layout_height="wrap_content"/>
-
-    <SeekBar
-        android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/seekSaturation"
-        android:id="@+id/seekLum"
-        android:max="100"
-        android:progress="50"
-        app:layout_constraintLeft_toLeftOf="@id/activity_main"
-        app:layout_constraintRight_toRightOf="@id/activity_main"
-        app:layout_constraintStart_toStartOf="@id/activity_main"
-        app:layout_constraintEnd_toEndOf="@id/activity_main"
-        android:layout_width="0dp" android:layout_height="wrap_content"/>
+        android:orientation="horizontal"
+        android:layout_width="0dp" android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/change"
+            android:text="Change"
+            android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/reset"
+            android:text="Reset"
+            android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

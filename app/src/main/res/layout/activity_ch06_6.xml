@@ -8,19 +8,11 @@
     android:layout_height="match_parent"
     tools:context="com.joker.test.androidexamples.MainActivity">
 
-
-    <com.joker.test.androidexamples.ch06.Ch06_4ClockView
-        android:id="@+id/clock"
-        android:layout_width="200dp"
-        android:layout_height="200dp"/>
-    
-    <com.joker.test.androidexamples.ch06.Ch06_4TestLayerView
-        app:layout_constraintTop_toBottomOf="@+id/clock"
-        android:layout_width="0dp"
+    <com.joker.test.androidexamples.ch06.Ch06_6WaveImageView
+        android:id="@+id/bitmapImg"
+        android:src="@mipmap/ic_launcher"
         app:layout_constraintLeft_toLeftOf="@id/activity_main"
         app:layout_constraintRight_toRightOf="@id/activity_main"
-        app:layout_constraintStart_toStartOf="@id/activity_main"
-        app:layout_constraintEnd_toEndOf="@id/activity_main"
-        android:layout_height="400dp"/>
+        android:layout_width="100dp" android:layout_height="100dp"/>
 
 </android.support.constraint.ConstraintLayout>

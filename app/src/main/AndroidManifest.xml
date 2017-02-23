@@ -27,6 +27,9 @@
         <activity android:name=".ch06.Ch06_3Activity" android:label="shape阴影"/>
         <activity android:name=".ch06.Ch06_4Activity" android:label="canvas绘图"/>
         <activity android:name=".ch06.Ch06_5Activity" android:label="ColorMatrix 色调 饱和度 亮度"/>
+        <activity android:name=".ch06.Ch06_5_2Activity" android:label="ColorMatrix"/>
+        <activity android:name=".ch06.Ch06_6Activity" android:label="mesh实现旗帜飘扬"/>
+        <activity android:name=".ch06.Ch06_7Activity" android:label="刮刮卡"/>
     </application>
 
 </manifest>

@@ -11,14 +11,24 @@
 
     <com.joker.test.androidexamples.ch04.Ch04_2OverScrollListView
         android:id="@+id/list"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        app:layout_constraintTop_toTopOf="@id/activity_main"
+        app:layout_constraintBottom_toBottomOf="@id/activity_main"
+        app:layout_constraintLeft_toLeftOf="@id/activity_main"
+        app:layout_constraintRight_toRightOf="@id/activity_main"
+        app:layout_constraintStart_toStartOf="@id/activity_main"
+        app:layout_constraintEnd_toEndOf="@id/activity_main"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
 
     </com.joker.test.androidexamples.ch04.Ch04_2OverScrollListView>
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
+        app:layout_constraintLeft_toLeftOf="@id/activity_main"
+        app:layout_constraintRight_toRightOf="@id/activity_main"
+        app:layout_constraintStart_toStartOf="@id/activity_main"
+        app:layout_constraintEnd_toEndOf="@id/activity_main"
         android:background="@color/colorPrimary"
-        android:layout_height="@dimen/action_bar_height"></android.support.v7.widget.Toolbar>
+        android:layout_height="@dimen/action_bar_height"/>
 </android.support.constraint.ConstraintLayout>
