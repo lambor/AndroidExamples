@@ -30,6 +30,9 @@
         <activity android:name=".ch06.Ch06_5_2Activity" android:label="ColorMatrix"/>
         <activity android:name=".ch06.Ch06_6Activity" android:label="mesh实现旗帜飘扬"/>
         <activity android:name=".ch06.Ch06_7Activity" android:label="刮刮卡"/>
+        <activity android:name=".ch06.Ch06_7_2Activity" android:label="Shader"/>
+        <activity android:name=".ch06.Ch06_7_3Activity" android:label="PathEffect"/>
+        <activity android:name=".ch06.Ch06_8Activity" android:label="正弦曲线"/>
     </application>
 
 </manifest>

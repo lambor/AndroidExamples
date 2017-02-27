@@ -2,6 +2,7 @@ package com.joker.test.androidexamples.ch05;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,6 +41,7 @@ public class Ch05_2_4DragView extends TextView {
                 int offsetX = x - lastX;
                 int offsetY = y - lastY;
                 ((View) getParent()).scrollBy(-offsetX,-offsetY);
+                Log.e("3535","left:"+getLeft());
                 lastX = x;
                 lastY = y;
                 break;
