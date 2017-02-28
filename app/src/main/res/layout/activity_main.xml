@@ -175,4 +175,26 @@
         app:layout_constraintLeft_toLeftOf="@+id/activity_main"
         app:layout_constraintTop_toBottomOf="@id/ch06_6"/>
 
+    <TextView
+        android:id="@+id/ch07"
+        android:text="ch07"
+        app:layout_constraintTop_toBottomOf="@+id/ch06_8"
+        app:layout_constraintLeft_toLeftOf="@id/activity_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/ch07_1"
+        android:text="ch07_1"
+        app:layout_constraintTop_toBottomOf="@+id/ch07"
+        app:layout_constraintLeft_toLeftOf="@id/activity_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/ch07_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ch07_2"
+        app:layout_constraintLeft_toRightOf="@+id/ch07_1"
+        app:layout_constraintTop_toBottomOf="@id/ch07"/>
+
 </android.support.constraint.ConstraintLayout>

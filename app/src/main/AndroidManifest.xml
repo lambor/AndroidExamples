@@ -33,6 +33,8 @@
         <activity android:name=".ch06.Ch06_7_2Activity" android:label="Shader"/>
         <activity android:name=".ch06.Ch06_7_3Activity" android:label="PathEffect"/>
         <activity android:name=".ch06.Ch06_8Activity" android:label="正弦曲线"/>
+        <activity android:name=".ch07.Ch07_1Activity" android:label="animation"/>
+        <activity android:name=".ch07.Ch07_2Activity" android:label="animator"/>
     </application>
 
 </manifest>
