@@ -26,6 +26,9 @@ import com.joker.test.androidexamples.ch07.Ch07_2Activity;
 import com.joker.test.androidexamples.ch07.Ch07_5Activity;
 import com.joker.test.androidexamples.ch07.Ch07_6Activity;
 import com.joker.test.androidexamples.ch07.Ch07_6_5Activity;
+import com.joker.test.androidexamples.ch12.Ch12MaterialStyleActivity;
+import com.joker.test.androidexamples.ch12.Ch12_3Activity;
+import com.joker.test.androidexamples.ch12.Ch12_4Activity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -60,6 +63,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.ch07_5).setOnClickListener(this);
         findViewById(R.id.ch07_6).setOnClickListener(this);
         findViewById(R.id.ch07_6_5).setOnClickListener(this);
+
+        findViewById(R.id.ch12_2).setOnClickListener(this);
+        findViewById(R.id.ch12_3).setOnClickListener(this);
+        findViewById(R.id.ch12_4).setOnClickListener(this);
     }
 
     @Override
@@ -130,6 +137,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.ch07_6_5:
                 Ch07_6_5Activity.start(MainActivity.this);
+                break;
+            case R.id.ch12_2:
+                Ch12MaterialStyleActivity.start(MainActivity.this,true);
+                break;
+            case R.id.ch12_3:
+                Ch12_3Activity.start(MainActivity.this);
+                break;
+            case R.id.ch12_4:
+                Ch12_4Activity.start(MainActivity.this);
                 break;
             default:
                 break;

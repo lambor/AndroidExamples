@@ -38,6 +38,9 @@
         <activity android:name=".ch07.Ch07_5Activity" android:label="自定义Animation"/>
         <activity android:name=".ch07.Ch07_6Activity" android:label="SVG"/>
         <activity android:name=".ch07.Ch07_6_5Activity" android:label="SVG动画实例"/>
+        <activity android:name=".ch12.Ch12MaterialStyleActivity" android:label="Material Style"/>
+        <activity android:name=".ch12.Ch12_3Activity" android:label="Palette"/>
+        <activity android:name=".ch12.Ch12_4Activity" android:label="Z=elevation+translationZ"/>
     </application>
 
 </manifest>
