@@ -41,6 +41,11 @@
         <activity android:name=".ch12.Ch12MaterialStyleActivity" android:label="Material Style"/>
         <activity android:name=".ch12.Ch12_3Activity" android:label="Palette"/>
         <activity android:name=".ch12.Ch12_4Activity" android:label="Z=elevation+translationZ"/>
+        <activity android:name=".ch12.Ch12_5Activity" android:label="tint and clip"/>
+        <activity android:name=".ch12.Ch12_6Activity" android:label="recyclerview and cardview"/>
+        <activity android:name=".ch12.Ch12_7ActivityB" android:label="过度动画ActivityB"/>
+        <activity android:name=".ch12.Ch12_7ActivityA" android:label="过度动画ActivityA"/>
+        <activity android:name=".ch12.Ch12_8Activity" android:label="ripple and circular reveal"/>
     </application>
 
 </manifest>

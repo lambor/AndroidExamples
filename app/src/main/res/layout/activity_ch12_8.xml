@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:text="有界波纹"
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+        <Button
+            android:text="无界波纹"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+        <Button
+            android:text="圆形ripple"
+            android:background="@drawable/ripple_ch12_8_circle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/oval"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/shape_ch12_8_oval"/>
+
+    <ImageView
+        android:id="@+id/rect"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/shape_ch12_8_rect"/>
+
+</LinearLayout>

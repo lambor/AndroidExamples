@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AndroidExamples</string>
+    <string-array name="spinner_rclist_type">
+        <item>Linear</item>
+        <item>Grid</item>
+    </string-array>
 </resources>
