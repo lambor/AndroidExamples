@@ -46,6 +46,9 @@
         <activity android:name=".ch12.Ch12_7ActivityB" android:label="过度动画ActivityB"/>
         <activity android:name=".ch12.Ch12_7ActivityA" android:label="过度动画ActivityA"/>
         <activity android:name=".ch12.Ch12_8Activity" android:label="ripple and circular reveal"/>
+        <activity android:name=".ch12.Ch12_9Activity" android:label="Toolbar"
+            android:theme="@style/ToolbarStyle"/>
+        <activity android:name=".ch12.Ch12_10Activity" android:label="Notification"/>
     </application>
 
 </manifest>

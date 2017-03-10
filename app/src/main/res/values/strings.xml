@@ -4,4 +4,6 @@
         <item>Linear</item>
         <item>Grid</item>
     </string-array>
+    <string name="home_description">home</string>
+    <string name="home_description_format">home_format</string>
 </resources>

@@ -261,7 +261,7 @@
             android:text="ch12_5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintLeft_toRightOf="@+id/ch12_3"
+            app:layout_constraintLeft_toRightOf="@+id/ch12_4"
             app:layout_constraintTop_toBottomOf="@+id/ch12"/>
 
         <Button
@@ -288,6 +288,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
+        <Button
+            android:id="@+id/ch12_9"
+            android:text="ch12_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/ch12_8"
+            app:layout_constraintTop_toBottomOf="@+id/ch12_2"/>
+
+        <Button
+            android:id="@+id/ch12_10"
+            android:text="ch12_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@id/activity_main"
+            app:layout_constraintTop_toBottomOf="@+id/ch12_6"/>
     </android.support.constraint.ConstraintLayout>
 
 </ScrollView>

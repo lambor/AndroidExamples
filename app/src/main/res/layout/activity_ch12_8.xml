@@ -37,4 +37,9 @@
         android:layout_height="100dp"
         android:background="@drawable/shape_ch12_8_rect"/>
 
+    <Button
+        android:text="StateListAnimator--objanimator in selector"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:stateListAnimator="@animator/selector_ch12_8_statelistanimator"/>
 </LinearLayout>
